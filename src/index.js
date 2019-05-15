@@ -8,14 +8,11 @@ import rootReducer from "./reducers";
 import { applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
-// applyMiddleware from redux
-// thunk from redux-thunk
-// logger from redux-logger
-// rootReducer from ./reducers
+
 
 const store = createStore(
   rootReducer,
-  applyMiddleware
+  applyMiddleware(thunk, logger)
 );
 
 ReactDOM.render(

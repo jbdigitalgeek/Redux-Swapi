@@ -1,3 +1,9 @@
+import axios from 'axios';
+
+export const FETCH_CHARACTERS = "FETCH_CHARACTERS";
+export const FETCH_CHARACTERS_SUCCESS = "FETCH_CHARACTERS_SUCCESS";
+export const FETCH_CHARACTER_ERROR = "FETCH_CHARACTER_ERROR";
+
 // we'll need axios
 
 // we'll need to create 3 different action types here.
